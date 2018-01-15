@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <meta name="description" content="File Metadata Microservice">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" 
+          integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" 
+          crossorigin="anonymous">
+   <link rel="icon" 
+      type="image/ico" 
+      href="https://cdn.glitch.com/e407bf3f-4a6e-4ffb-a462-0b5e2b10ae84%2Ffile.ico?1516057412833">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body class="container">
+    <header>
+      <h1 class="text-center">
+      File Metadata Microservice
+      </h1>
+    </header>
+    
+    <main class="text-center">
+      <p>Submit a file to view its filesize.</p>
+      <form action="/get-file-size" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit">
+      </form>
+    </main>
+
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" 
+            integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" 
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
